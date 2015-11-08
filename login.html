@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+	<title>Free2Study</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+</head>
+<nav role="navigation" class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">Free2Study</a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classSelection.html">Add Class</a></li>
+                <li><a href="findgroup.html">Find Group </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body>
+	<header>
+		<div id="box"></div> 
+		<h1>Login Information:</h1>
+	</header>
+	<main>
+		<div id="interface">
+			<input id="email" type="email" name="email" size="35" value="" placeholder="e-mail address">
+			<input id="password" type="password" name="password" size="35" value="" placeholder="password">
+			<button id="submit">Submit</button>
+			<li id = "forgot"><a href="#">Forgot username or password?</a></li>
+			<button id="signup">Sign Up</button>
+		</div>
+	</main>
+	<style>
+		h1 {
+			font-size: 40px;
+			color: lightgray;
+			text-align: center;
+			border-width: 300px;
+			margin: 10px;
+			padding-top: 50px;
+			margin-bottom: 40px;
+		}
+		#submit {
+			display: block;
+			font-size:15px;
+			text-align: center;
+			margin: auto;
+			margin-top: 10px;
+		}
+		#signup {
+			display: block;
+			font-size:15px;
+			text-align: center;
+			margin: auto;
+			margin-top: 15px;
+		}
+		#email {
+			display:block;
+			font-size: 15px;
+			width: 300px;
+			text-align: center;
+			margin: auto;
+		}
+		#forgot {
+			font-size:12px;
+			display:block;
+			text-align: center;
+			margin-top: 15px;
+		}
+		#password {
+			display:block;
+			font-size: 15px;
+			width: 300px;
+			text-align: center;
+			margin: auto;
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+		#box {
+			position:absolute;
+			width: 400px;
+			height: 350px;
+  			top:auto;
+  			left: 35.5%;
+  			margin-top: 1%;
+			/*margin-left: 1px;*/
+			/*margin-right: 1px;*/
+			background-color: maroon;
+			z-index: -99999999;
+		}
+	</style>
+</body>
+</html>

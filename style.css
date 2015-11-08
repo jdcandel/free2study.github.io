@@ -1,0 +1,12 @@
+.masthead {
+	background-color: maroon;
+	color: lightgrey;
+	background-image: url("pencil.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: contain;
+}
+
+.navbar-custom {
+	background-color: #337ab7;
+}
